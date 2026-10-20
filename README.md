@@ -96,11 +96,6 @@ python -m autobid arena --data data/validation.csv --config configs/demo.json --
 
 每份 CSV 表示一个完整投放局，仅六列：`index,time_step,request_id,player_id,player_type,pvalue`。时间片内部用数字 `index` 的请求首次位置确定顺序；若正式数据另有顺序语义，必须更新适配。缺失 `(request_id,player_id)` 表示不参与；存在但非法的 pvalue 报错；合法零值保持零值。预算、日期/投放期和来源位于配置或 manifest，不添加伪造的官方字段。
 
-## 开始协作
-
-实习生 A 从数据、统计与预测入手；B 从拍卖手工样例、评估和规则测试入手；负责人把控规则、信息边界、优化/RL 与模型选择。各自建 feature 分支、提交小 PR，参考 [协作约定](docs/team.md) 和仓库 Issues。私有仓库需要管理员给两位同事添加 Write 权限。
-
-当前版本的关键限制：正式预算保护与 SDK 未冻结；原版完整预训练流程未复现；公开大规模数据未全量运行；训练链路已具备，但性能和比赛效果需要真实数据验证。回放器当前会把单日六字段数据放进内存，大数据先按完整请求抽样，正式规模到来后再评估流式改造。策略接口隔离已经测试，但同进程 Python 不是不可信代码沙箱。资源计时为本地近邻秩 P99，最终 200 ms / 4 GB 约束应在正式运行环境复核。
 
 ## 来源及许可
 
