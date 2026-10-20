@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/alimama-tech/AuctionNet",
+  "commit": "c20de631a40e24669d1d6a8e2acefd8f492f172d",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "modified": false
+    },
+    {
+      "path": "simul_bidding_env/PvGenerator/NeurIPSPvGen.py",
+      "git_blob_sha": "d1fcd0dfff0a4392a28c3341087c575e35586f7b",
+      "modified": false
+    },
+    {
+      "path": "simul_bidding_env/strategy/base_bidding_strategy.py",
+      "git_blob_sha": "ff7edbbec8447c093604479adca2c6e93892d48b",
+      "modified": false
+    },
+    {
+      "path": "simul_bidding_env/strategy/abid_bidding_strategy.py",
+      "git_blob_sha": "331262d2c31aa787f3b14404b02c7864a54233d1",
+      "modified": false
+    }
+  ]
+}

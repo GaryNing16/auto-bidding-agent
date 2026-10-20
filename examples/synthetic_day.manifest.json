@@ -1,0 +1,10 @@
+{
+  "kind": "synthetic_fixture",
+  "seed": 7,
+  "steps": 72,
+  "players": 3,
+  "requests_per_step": 3,
+  "source": "autobid.data.synthetic_requests",
+  "real_market_data": false,
+  "missing_pairs": "not participating"
+}

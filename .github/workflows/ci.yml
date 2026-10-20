@@ -1,0 +1,33 @@
+name: Tests and runnable examples
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: python -m autobid generate --output data/demo.csv --seed 7
+      - run: python -m autobid evaluate --data data/demo.csv --config configs/demo.json --output runs/core
+  ppo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -e '.[rl,upstream]'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m autobid generate --output data/train.csv --seed 7
+      - run: python -m autobid generate --output data/validation.csv --seed 17
+      - run: python -m autobid train --data data/train.csv --config configs/demo.json --player 0 --timesteps 256 --output models/smoke
+      - run: python -m autobid evaluate --data data/validation.csv --config configs/demo.json --strategies ppo --model models/smoke.zip --output runs/ppo

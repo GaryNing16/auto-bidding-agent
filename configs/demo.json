@@ -1,0 +1,9 @@
+{
+  "steps": 72,
+  "alpha_max": 5.0,
+  "budgets": {"0": 120.0, "1": 100.0, "2": 140.0},
+  "player_types": {"0": "0", "1": "1", "2": "0"},
+  "budget_policy": "cap_bid",
+  "tie_break": "seeded_random",
+  "seed": 7
+}

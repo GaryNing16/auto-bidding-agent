@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve exact upstream bytes for provenance tests.
+third_party/auctionnet/** -text
