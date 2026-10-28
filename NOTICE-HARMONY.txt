@@ -1,0 +1,16 @@
+Harmony bidding local competition adapter, 2026.
+
+Based on the AuctionNet source worktree by alimama-tech:
+https://github.com/alimama-tech/AuctionNet
+Upstream commit: c20de631a40e24669d1d6a8e2acefd8f492f172d
+Upstream license: Apache License 2.0, retained in LICENSE.txt.
+
+harmony_bidding.agent_api.Agent inherits the upstream standard-library-only
+simul_bidding_env.strategy.base_bidding_strategy.BaseBiddingStrategy abstraction.
+Its CPA constructor and request-level signatures are not used. Local auction,
+budget, PID, observations, dataset adapters, scoring and lifecycle are rewritten
+for the user-supplied Harmony rules. No upstream model weights are used.
+The new trajectory bridge can feed the upstream ReplayBuffer push interface.
+
+This is a local development environment, not the organizer's official evaluator,
+PID, data format, scoring implementation or acceptance certification.

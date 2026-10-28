@@ -1,0 +1,8 @@
+index,time_step,request_id,player_id,player_type,pvalue
+90,1,r100,A,type_A,10
+3,1,r100,B,type_B,8
+21,1,r100,C,type_C,11
+6,1,r050,A,type_A,3
+41,1,r050,B,type_B,2
+8,1,r003,A,type_A,4
+12,1,r900,C,type_C,0

@@ -6,3 +6,18 @@
 /strategy_train_env/data/
 /data/
 /strategy_train_env/saved_model/
+
+# Local Harmony development artifacts; original upstream entries above retained.
+/.venv/
+/.venv-baselines/
+/.five_*/
+/outputs/
+/.pytest_cache/
+*.egg-info/
+
+# Curated raw public-data snapshot; generated datasets stay ignored.
+!/data/
+/data/*
+!/data/README.md
+!/data/real_criteo_sample/
+/data/real_criteo_sample/derived/

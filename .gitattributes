@@ -1,0 +1,2 @@
+# Preserve exact bytes of the checksummed public-data snapshot on every OS.
+data/real_criteo_sample/source/** -text

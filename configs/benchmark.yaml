@@ -1,0 +1,23 @@
+rules:
+  total_slots: 72
+  money_decimals: 6
+  zero_balance_can_bid: false
+  tie_seed: 20261018
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 4
+agent_seed: 1234
+data_dir: data/synthetic_demo
+output_dir: outputs/benchmark
+split: validation
+pid:
+  kp: 1.5
+  ki: 0.1
+  kd: 0.15
+  initial_alpha: 1.0
+benchmark:
+  target_role: advertiser_1
+  agent: {kind: constant, alpha: 40.0}
+  warmup_episodes: 2
+  episodes: 20
+  min_samples: 1000

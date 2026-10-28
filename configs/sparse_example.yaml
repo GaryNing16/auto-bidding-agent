@@ -1,0 +1,28 @@
+# Hand-calculated fixture. Existing original and converted data are untouched.
+rules:
+  total_slots: 72
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 3
+agent_seed: 1234
+data_dir: outputs/datasets/sparse_example_v2
+output_dir: outputs/sparse_example
+split: train
+organizer_import:
+  source_kind: hand_calculated_sparse_fixture
+  sources:
+    - {path: fixtures/sparse/requests.csv, day_id: manual_sparse}
+  time_step_base: 1
+  request_id_scope: day
+  ordering: {mode: file_first_seen}
+  players:
+    A: {player_type: type_A, budget: 100.0}
+    B: {player_type: type_B, budget: 100.0}
+    C: {player_type: type_C, budget: 100.0}
+  split_by_day: {manual_sparse: train}
+run:
+  assignments: {A: fixed_A, B: fixed_B, C: fixed_C}
+  teams:
+    fixed_A: {kind: constant, alpha: 1.2}
+    fixed_B: {kind: constant, alpha: 1.0}
+    fixed_C: {kind: constant, alpha: 1.0}

@@ -1,0 +1,4 @@
+day_id,advertiser_id,advertiser_type,budget
+tiny-manual,A,app,100
+tiny-manual,B,commerce,100
+tiny-manual,C,service,100

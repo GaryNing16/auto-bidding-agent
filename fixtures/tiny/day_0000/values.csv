@@ -1,0 +1,4 @@
+day_id,opportunity_id,advertiser_id,estimated_value
+tiny-manual,manual-second-price,A,10
+tiny-manual,manual-second-price,B,8
+tiny-manual,manual-second-price,C,11

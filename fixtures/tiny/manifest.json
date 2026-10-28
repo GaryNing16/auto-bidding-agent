@@ -1,0 +1,14 @@
+{
+  "schema_version": "harmony-local-csv-v1",
+  "data_origin": "hand_written_local_fixture_not_official",
+  "split_policy": "single_complete_day_train",
+  "days": [
+    {
+      "day_id": "tiny-manual",
+      "directory": "day_0000",
+      "split": "train",
+      "total_slots": 2,
+      "advertiser_count": 3
+    }
+  ]
+}

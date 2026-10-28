@@ -1,0 +1,844 @@
+{
+  "dataset": "criteo/criteo-attribution-dataset",
+  "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+  "license": "cc-by-nc-sa-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "official_description": "https://ailab.criteo.com/criteo-attribution-modeling-bidding-dataset/",
+  "dataset_url": "https://huggingface.co/datasets/criteo/criteo-attribution-dataset",
+  "retrieved_utc": "2026-10-22T16:24:53.748708+00:00",
+  "row_count": 10000,
+  "source_sha256": "ab0d0236a2e42a28dc9a1d62d37637a50bc3d7e44422fe4da5c7e83f476f3835",
+  "source_fields": [
+    "source_row",
+    "timestamp",
+    "campaign",
+    "click"
+  ],
+  "full_dataset_rows": 16468027,
+  "sampling": {
+    "method": "100 equally spaced row-offset blocks, 100 contiguous rows per block",
+    "formula": "offset_i = floor((16468027 - 100) * i / 99), i=0..99",
+    "selection_uses_labels": false,
+    "representative_full_days": false
+  },
+  "changes": [
+    "selected bounded row blocks",
+    "retained timestamp, campaign and click only",
+    "added source_row from the official viewer row_idx; no user ID retained"
+  ],
+  "pages": [
+    {
+      "offset": 0,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=0&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "9136ca5d6741d6e02a947c92cf1e031c38a001cd07d15b0e9b58de6ce54422bf",
+      "response_bytes": 44072
+    },
+    {
+      "offset": 166342,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=166342&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "1e274fa8757db6f9172de61f8d6ee715a38f5f8ce15b7ea9999300b27c8f84f5",
+      "response_bytes": 44794
+    },
+    {
+      "offset": 332685,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=332685&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "fd02cdc10f64d99e6190c949d7da99453cd6f53f3b9a8c355770ce4a270125fa",
+      "response_bytes": 44817
+    },
+    {
+      "offset": 499028,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=499028&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "b02f2eac8c666fdff252d9753383effa54e8234d94a29d8ab13536f4c569ff2a",
+      "response_bytes": 44887
+    },
+    {
+      "offset": 665370,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=665370&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "46a356736613830bbca45a1567287aae025fa9c8e04f587abcc86f16dabeb6f0",
+      "response_bytes": 44970
+    },
+    {
+      "offset": 831713,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=831713&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "c8dc4e070994561fb5d57fe89e05b2fcc72b998ac871c4b283f7c2dfcda9f8eb",
+      "response_bytes": 45044
+    },
+    {
+      "offset": 998056,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=998056&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "f80d11e40635098579ac7015c2744c6baeb1a09ab1f9059fadb0260b614d1736",
+      "response_bytes": 44930
+    },
+    {
+      "offset": 1164398,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=1164398&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "f7b7b2b53e1ee6c7adbc0e52d02f8cbcc594a1663f88ebc23d87fa7fd688a2c2",
+      "response_bytes": 45017
+    },
+    {
+      "offset": 1330741,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=1330741&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "3f033421078ff30c2b94ca7e116002c86e0d2ae03fa32b6ae6dacc1275966b37",
+      "response_bytes": 45092
+    },
+    {
+      "offset": 1497084,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=1497084&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "4df75b907f784a4f68358fb6ab58f27cddd53da473422ea479baf2bb074de2b7",
+      "response_bytes": 44954
+    },
+    {
+      "offset": 1663426,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=1663426&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "06745d3470afa65ba3b8cc560c8d372415da059fcafcaf0a9f4c0367e03b48dc",
+      "response_bytes": 44984
+    },
+    {
+      "offset": 1829769,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=1829769&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "0e9b4f1ba4bc25ec3cb22f1e35386cfa0d59feab830caf48def20f9183eeb044",
+      "response_bytes": 45001
+    },
+    {
+      "offset": 1996112,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=1996112&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "42753c2581585a064cc46cb56378b63e4a0c27b954b7d329d8f7b3b207dfd5ee",
+      "response_bytes": 44997
+    },
+    {
+      "offset": 2162455,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=2162455&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "42ff69b8cd0c174ff7853a0a7d3f72d58fe5f136bd93a6f9afda3378d678d5db",
+      "response_bytes": 45051
+    },
+    {
+      "offset": 2328797,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=2328797&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "a81dd255e1db330cf0c961bc2b7fcf81d2687f682322defb035e43153745d5cf",
+      "response_bytes": 45053
+    },
+    {
+      "offset": 2495140,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=2495140&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "d524ceaafc80fbd41687572bd3b2ccdeb624b5fafaad978a8f5955f693215de7",
+      "response_bytes": 44899
+    },
+    {
+      "offset": 2661483,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=2661483&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "ddeabd4a0d4c6fc6c57617117c9f229f15abb12492a57777f6a6d943f0bbbdca",
+      "response_bytes": 44905
+    },
+    {
+      "offset": 2827825,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=2827825&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "4632f227c51c99e1b119c0d2fb44be6c57811444bbf5637eb57121e1a9f4dcb5",
+      "response_bytes": 44967
+    },
+    {
+      "offset": 2994168,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=2994168&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "c9e78c6a24812530ab720ec27c9efe7902a11b7f2f58943525cf54514fe84def",
+      "response_bytes": 45114
+    },
+    {
+      "offset": 3160511,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=3160511&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "9ad222e026cb52388ea523de578eb69bbc88c59d2899399f5625bbc7f49b311a",
+      "response_bytes": 45042
+    },
+    {
+      "offset": 3326853,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=3326853&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "ad2fe67ee6757870acda693017918e3d7c448520a02fbbab507db1f35f7973a7",
+      "response_bytes": 44966
+    },
+    {
+      "offset": 3493196,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=3493196&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "5b8a9480190d35a79172046d705073678e15b3daba1404b36cc3ab2e56f4cd19",
+      "response_bytes": 45050
+    },
+    {
+      "offset": 3659539,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=3659539&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "edff1e9993da78237a302e057df3de2ef2a6257ad02290145b307a623595f7c2",
+      "response_bytes": 45012
+    },
+    {
+      "offset": 3825882,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=3825882&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "9ec3f02033c8ffa8382558db6f132cf4241d9940e06a8964b87f8ced044bce0d",
+      "response_bytes": 45100
+    },
+    {
+      "offset": 3992224,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=3992224&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "8c2662f8da27d74ed5adf4922fc4495cea63f0ad09b2a2f4b2d9f20d061b8c60",
+      "response_bytes": 45047
+    },
+    {
+      "offset": 4158567,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=4158567&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "ecb08580aae573d0e807283fe6857ed19706d02184d6022d1f6b1379c79814bd",
+      "response_bytes": 44911
+    },
+    {
+      "offset": 4324910,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=4324910&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "10ad51843c96ddde1109ce26acb43821a72b582a15a7bcaff843c36cf66a2537",
+      "response_bytes": 45058
+    },
+    {
+      "offset": 4491252,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=4491252&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "e296649fbe6b1d4efc049589a274fc3304bf25fd8da1bf631b27655c527d78fb",
+      "response_bytes": 45015
+    },
+    {
+      "offset": 4657595,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=4657595&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "84cc2ac4cbf8fb35785299803731da1a6b89ff48560d6a12e92e57e0a2ea9db9",
+      "response_bytes": 45046
+    },
+    {
+      "offset": 4823938,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=4823938&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "8dc56c5815754885baeb771462531dd483ac947230c81dce98f473ef58bf7abb",
+      "response_bytes": 45028
+    },
+    {
+      "offset": 4990280,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=4990280&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "32b98dfa57d7f63fe3711e1b956ba885b0fdcb753c09c99306b883c8053747c4",
+      "response_bytes": 45039
+    },
+    {
+      "offset": 5156623,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=5156623&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "4aa396af2af979637c4ccb95a16f85d00a272ad854e77ad1757138634ea6db29",
+      "response_bytes": 45111
+    },
+    {
+      "offset": 5322966,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=5322966&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "571572d90161b62d69645acb53c4239390680e0ee12a172e5e0dc00e007fe6d9",
+      "response_bytes": 45048
+    },
+    {
+      "offset": 5489309,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=5489309&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "7866590f4dd56f9da91a3be6ae092ef2a26ad7c028416bde6b0a3fee7b5db217",
+      "response_bytes": 44971
+    },
+    {
+      "offset": 5655651,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=5655651&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "85f620670817c7a3c48a29a55cc91ca1bfc52dddae077b4fb24cfae88ba7519d",
+      "response_bytes": 44956
+    },
+    {
+      "offset": 5821994,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=5821994&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "d1e20e61e3a5018cc52720d1f2a0f276fd67273d59617c612a308e10745a3eab",
+      "response_bytes": 45050
+    },
+    {
+      "offset": 5988337,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=5988337&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "42a38cb8026b5a1ef2aea20e839134c34c936530eebc4e158083747d06728e2e",
+      "response_bytes": 44885
+    },
+    {
+      "offset": 6154679,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=6154679&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "8f1f3767bd2aece669985738a22da2e74ccbd1d4a6242a191a91c747ffda0fdb",
+      "response_bytes": 45108
+    },
+    {
+      "offset": 6321022,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=6321022&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "b067ae01dc91a5a241e20b2c583545f6f667f5c4d5796d4696481e4465379887",
+      "response_bytes": 45218
+    },
+    {
+      "offset": 6487365,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=6487365&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "ccfb4ab6a02c88974399b2432da138189f0f029f64eed02ab037af7b81f25443",
+      "response_bytes": 45093
+    },
+    {
+      "offset": 6653707,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=6653707&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "178e3f8af280ed4d0abe0824df50cecb31b5d0ca990595cf9a7c1a3631bbb246",
+      "response_bytes": 45127
+    },
+    {
+      "offset": 6820050,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=6820050&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "a5f957bb12ece14cc696ddaf83c8aa9b9ce493176d0180b1a5b1fd84d43106ba",
+      "response_bytes": 45102
+    },
+    {
+      "offset": 6986393,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=6986393&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "136ab3784672dcdc431fa0c99ed1616c5ef7970620e3da5b2e2af4b59f0ce9db",
+      "response_bytes": 45094
+    },
+    {
+      "offset": 7152735,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=7152735&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "d1b395f5a5cdb34966e824431e0ba92ff35047a7abb71cc7b421d66b33bb8a12",
+      "response_bytes": 45117
+    },
+    {
+      "offset": 7319078,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=7319078&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "48fb38060eabb42fbdc2b61035aa966659ad3ac5af660f640386c077838a6652",
+      "response_bytes": 45260
+    },
+    {
+      "offset": 7485421,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=7485421&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "2ce6a0fd488edf3757b927d2a8337e8bd00517a26fc9e21ad616d6eff49c177c",
+      "response_bytes": 45143
+    },
+    {
+      "offset": 7651764,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=7651764&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "6feb71ec6f7ba9d5e023ed2f7eec9ebf6508ad4edf1470e4dfabadf95e19b6d7",
+      "response_bytes": 45091
+    },
+    {
+      "offset": 7818106,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=7818106&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "127bc21f24fc01084d59050d44ef002259fcde6c1a5af0eb6023cad1b47f0022",
+      "response_bytes": 45148
+    },
+    {
+      "offset": 7984449,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=7984449&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "deab319dd82c0d3fa2e77925bf698fc40fcc1eb3cb89c01cce67e2b572b3b5ae",
+      "response_bytes": 45083
+    },
+    {
+      "offset": 8150792,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=8150792&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "3d0e026588f8c0869619a9dc29594e54862292ecb7168d673e9e262540da8f3c",
+      "response_bytes": 45249
+    },
+    {
+      "offset": 8317134,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=8317134&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "11f4c39183395d41e466536c39dba46f22e73880e127ffe4ed6254f389ab6f29",
+      "response_bytes": 45079
+    },
+    {
+      "offset": 8483477,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=8483477&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "a517070b48c4b4b62755cf64a8bbd00f649518a4ebe38de6a6be6a44469ea746",
+      "response_bytes": 45143
+    },
+    {
+      "offset": 8649820,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=8649820&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "8118f2bcf493ec8766ab1876a1a7909695e79453dddae2b890dc742fbdd66173",
+      "response_bytes": 45144
+    },
+    {
+      "offset": 8816162,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=8816162&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "148f47a97accf4911ef68628988a756bebaff45b8bd494d19373106d429f9d5f",
+      "response_bytes": 44963
+    },
+    {
+      "offset": 8982505,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=8982505&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "26fcb7644050c4e5e5f1431931c70933ccd40539b43ed8777a8d96511098cf5c",
+      "response_bytes": 45118
+    },
+    {
+      "offset": 9148848,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=9148848&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "a68ad78d364571bf9727bcc6c26adbd17b9fed298e51715d14591b07143830c6",
+      "response_bytes": 45097
+    },
+    {
+      "offset": 9315191,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=9315191&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "bb27b22ae82f61a32f14427cbf9183468b3fdb40842a1f009ffb66152524c3b8",
+      "response_bytes": 45153
+    },
+    {
+      "offset": 9481533,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=9481533&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "083fbe115abfa631646ad8393d13e34a5298fff1a71dc97230545f26951b3d38",
+      "response_bytes": 45264
+    },
+    {
+      "offset": 9647876,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=9647876&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "621424d6553c07a5c8fc4d0be3cc0a41a4b51b7932f7f2e0fac1ee4ee908a9b4",
+      "response_bytes": 45219
+    },
+    {
+      "offset": 9814219,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=9814219&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "f233bd0a0c2978f070dd4b5eb1014aeaafe80992dbc6fa777a19d05ea5ce5eed",
+      "response_bytes": 45218
+    },
+    {
+      "offset": 9980561,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=9980561&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "6568fd61ceabfa1c123b3c854c1399bcb32235dc7db6e7f179cadf95fa7bd6d4",
+      "response_bytes": 45032
+    },
+    {
+      "offset": 10146904,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=10146904&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "a9a9bb11374dd3f752f30b54e61a7507967f3913bd12b40b6ea50225d014a334",
+      "response_bytes": 45248
+    },
+    {
+      "offset": 10313247,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=10313247&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "2fd7f8b1e2eefc4a258dc2694282376ec014cff1eb00e9a1d601ed000e170970",
+      "response_bytes": 45256
+    },
+    {
+      "offset": 10479589,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=10479589&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "d3d98b94066bdc71e08b766b6fe67c55c41db951a11769f3943ddb98a65c2b14",
+      "response_bytes": 45220
+    },
+    {
+      "offset": 10645932,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=10645932&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "33222c17ee9c640ae38fbd1df08738751ae7323441283d2c61d56d86a88a85a2",
+      "response_bytes": 45244
+    },
+    {
+      "offset": 10812275,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=10812275&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "a1cd0ff215002a4605470792c863620206a8d5240bc64f2fa3d3b0c36c32df32",
+      "response_bytes": 45231
+    },
+    {
+      "offset": 10978618,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=10978618&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "c3e7e3727f59f0f97b43e4ca07475db70304c2c29c20aa761b44cb211160f3dc",
+      "response_bytes": 45170
+    },
+    {
+      "offset": 11144960,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=11144960&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "7ecf81b32d4cb7007e583a00b6c3633977cee430c35e445bd37b08de48b993c5",
+      "response_bytes": 45208
+    },
+    {
+      "offset": 11311303,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=11311303&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "14438d93d4dcb061727aab17dec3e8aad5daa354ee7af4eec30614399d9de19b",
+      "response_bytes": 45187
+    },
+    {
+      "offset": 11477646,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=11477646&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "e9e0068fd0a87958354474661cd177e0ea33343c02b615deff1a79d1586648ec",
+      "response_bytes": 45247
+    },
+    {
+      "offset": 11643988,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=11643988&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "699518afbe05442e9e33a455941aa89903a25bf7b9d84ccac5dd5e87511441c6",
+      "response_bytes": 45301
+    },
+    {
+      "offset": 11810331,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=11810331&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "dd0cba21464e9e0caebdfb841cdd561cff9ea719dcab37d53a9fd415bd4151c0",
+      "response_bytes": 45245
+    },
+    {
+      "offset": 11976674,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=11976674&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "8bf9471a26fb82752f90c65d2d84a4b30fd62a2ab024d9bc1cf24599d0ae1b62",
+      "response_bytes": 45254
+    },
+    {
+      "offset": 12143016,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=12143016&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "99bfbb1640867172ad7a41a7a3fba9e482cf336f265e435717690130782ae4a2",
+      "response_bytes": 45273
+    },
+    {
+      "offset": 12309359,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=12309359&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "5e0f1a31f7a31d97c08d583f0a772177e7debfa8aeb3e9cca2921b7f641b8cee",
+      "response_bytes": 45253
+    },
+    {
+      "offset": 12475702,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=12475702&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "72ae4e4c257e7dd2157185abfd08492dce25d4fe4ae610bf0527d33935eb8edd",
+      "response_bytes": 45204
+    },
+    {
+      "offset": 12642044,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=12642044&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "3f58fbcb117b064c2c382bb1f30091d5b2bc04915904016833e6df73f1cdf809",
+      "response_bytes": 45247
+    },
+    {
+      "offset": 12808387,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=12808387&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "ad0547a2523ccb1855572c3ea3f8adef9d03e28c416bbabaca2a963d40faa95e",
+      "response_bytes": 45201
+    },
+    {
+      "offset": 12974730,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=12974730&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "b4bae86184e5f8c994aac1088a11dd672460d4dedc4efbef758cfdb482c7abdd",
+      "response_bytes": 45221
+    },
+    {
+      "offset": 13141073,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=13141073&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "23152c5e4585675f87c3960e859bfef7f733073bfcc7b918a82f971e2c771cca",
+      "response_bytes": 45304
+    },
+    {
+      "offset": 13307415,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=13307415&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "21cc84f3a33ba90ecc654c7889865c6bd4182318285405888f345d8a3970f6d7",
+      "response_bytes": 45223
+    },
+    {
+      "offset": 13473758,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=13473758&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "9392db5a8aa6e245312f1ad2065e1920a32dac0e6ac022511b5aff17aeac7dab",
+      "response_bytes": 45224
+    },
+    {
+      "offset": 13640101,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=13640101&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "5aacb017a7c19d2f4844fda72a567fd8f29ae2bada7bf6aa2fccf453ed7b049d",
+      "response_bytes": 45246
+    },
+    {
+      "offset": 13806443,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=13806443&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "8e360ab430de64ed471ce4d409bcc77a225c154ad9a0f95078c0f4e99080d5db",
+      "response_bytes": 45120
+    },
+    {
+      "offset": 13972786,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=13972786&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "f4620be9994a6480c3f14480e0edd980d0d6b2cc8d20204ed8596d4790a48fe2",
+      "response_bytes": 45265
+    },
+    {
+      "offset": 14139129,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=14139129&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "cc5bc0a26c1d7b73e75eae6dabcf4d70671c53638911d8227a0a2c7cd2d9c034",
+      "response_bytes": 45263
+    },
+    {
+      "offset": 14305471,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=14305471&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "57118d677a2e528f2b7eecba9e9cef0a709810cb4ce7bc8cb3040d552b32fdce",
+      "response_bytes": 45251
+    },
+    {
+      "offset": 14471814,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=14471814&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "9eb479cb86ae148cd4c19c492ca6ff42d3b9d144caf02049606643afa9da8914",
+      "response_bytes": 45249
+    },
+    {
+      "offset": 14638157,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=14638157&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "bcc4bd01d6d552ba6ea11e827651abdabf1708df91a8b29078c12483fb485c46",
+      "response_bytes": 45170
+    },
+    {
+      "offset": 14804500,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=14804500&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "66d71862e280be17c7e773a8d344b3a57520277ecd14e0583e14caa16ff228af",
+      "response_bytes": 45200
+    },
+    {
+      "offset": 14970842,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=14970842&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "207c87b628238ca7f5d454df99bbe4e990de49712a06fb2dc7341f84b9e45d84",
+      "response_bytes": 45185
+    },
+    {
+      "offset": 15137185,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=15137185&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "71f69080608fed295a64e48f9a4dfc0bdc5e0a882f940884ced27e7aaabae1e9",
+      "response_bytes": 45229
+    },
+    {
+      "offset": 15303528,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=15303528&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "aa939fcd7b311e584f363dbab76e67e5a80398bac392c92bb0b4e7851448100a",
+      "response_bytes": 45406
+    },
+    {
+      "offset": 15469870,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=15469870&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "6da436bb31b7244727993aead6c4212b071d61ad4992e8c7eb2bcc8022316411",
+      "response_bytes": 45239
+    },
+    {
+      "offset": 15636213,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=15636213&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "68d484f83b394b0ad48c11d88d8254b187112ad866bfc17979778706f5b70d24",
+      "response_bytes": 45275
+    },
+    {
+      "offset": 15802556,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=15802556&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "06e4691ca207e91c97b64f89ec75bd00dd3ce5afa62da66510446336402666e1",
+      "response_bytes": 45237
+    },
+    {
+      "offset": 15968898,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=15968898&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "847d29f9e86c0f2e2ff9fb4798cbbcf661ce4eb88a5cff66488be82a8cef5788",
+      "response_bytes": 45288
+    },
+    {
+      "offset": 16135241,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=16135241&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "615d15cbee78f8f3e9a10c45785f886dcdddf244ee38738c84f1b580506b2429",
+      "response_bytes": 45217
+    },
+    {
+      "offset": 16301584,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=16301584&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "7dfa90523d35096e2ce51794c22cff8c919cdb36da4ed2e04a4d6a89d0329b43",
+      "response_bytes": 45240
+    },
+    {
+      "offset": 16467927,
+      "length": 100,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=criteo%2Fcriteo-attribution-dataset&config=default&split=train&offset=16467927&length=100",
+      "revision": "904188a63cbad78bee43cd26ff5ee4ac77903986",
+      "response_sha256": "ae0a0b26f910d23f5a91a1d67e27de550cbadb94d596f6b8cb008b83a4c35d1b",
+      "response_bytes": 45229
+    }
+  ],
+  "downloaded_page_bytes": 4511416,
+  "upstream_readme": {
+    "url": "https://huggingface.co/datasets/criteo/criteo-attribution-dataset/raw/904188a63cbad78bee43cd26ff5ee4ac77903986/README.md",
+    "sha256": "da91c2e54d0b5d89548298c54888eecd0a5d04db8f23454282cca58347067549"
+  },
+  "license_document": {
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt",
+    "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd"
+  },
+  "revision_protocol": "repo SHA before/after and every page x-revision must equal pinned SHA; no live historical API fallback",
+  "download_protocol": "Serial requests, 6 second pause after each new page; stop on HTTP429; checksummed local page projections allow resume without re-fetching accepted pages",
+  "attribution": "Criteo; Eustache Diemert, Julien Meynet, Pierre Galland and Damien Lefortier (2017), Attribution Modeling Increases Efficiency of Bidding in Display Advertising",
+  "scope": "Real displayed-impression subset, not complete bid requests or observed multi-advertiser auctions"
+}

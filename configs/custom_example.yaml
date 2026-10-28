@@ -1,0 +1,33 @@
+# Interface demonstration, not a trained strategy or official competition settings.
+rules:
+  total_slots: 72
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 4
+agent_seed: 1234
+data_dir: data/synthetic_demo
+output_dir: outputs/custom_example
+split: local_holdout
+pid: {kp: 1.5, ki: 0.1, kd: 0.15, initial_alpha: 1.0}
+run:
+  assignments: {advertiser_1: example}
+  teams:
+    example:
+      kind: custom
+      class_path: examples.constant_agent:ExampleConstantAgent
+      kwargs: {alpha: 1.2}
+evaluation:
+  reference_strategy: local_pid
+  roles: [advertiser_1, advertiser_2, advertiser_3]
+  teams:
+    A: {kind: custom, class_path: examples.constant_agent:ExampleConstantAgent, kwargs: {alpha: 1.2}}
+    B: {kind: pid}
+    C: {kind: constant, alpha: 1.4}
+  isolation: process
+  diagnostic_undefined: false
+benchmark:
+  target_role: advertiser_1
+  agent: {kind: custom, class_path: examples.constant_agent:ExampleConstantAgent, kwargs: {alpha: 1.2}}
+  warmup_episodes: 1
+  episodes: 15
+  min_samples: 1000

@@ -1,0 +1,375 @@
+# Generated native-data quickstart; local settings, not official parameters.
+rules:
+  total_slots: 72
+  money_decimals: 6
+  zero_balance_can_bid: false
+  tie_seed: 20261018
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 48
+agent_seed: 1234
+data_dir: data/auctionnet_72/sample_internal
+output_dir: outputs/auctionnet_native_sample
+split: local_holdout
+organizer_import:
+  source_kind: auctionnet_native_simulation_bounded_sample
+  sources:
+  - path: data/auctionnet_72/period-7/sample.csv
+    day_id: period-7
+  - path: data/auctionnet_72/period-21/sample.csv
+    day_id: period-21
+  - path: data/auctionnet_72/period-24/sample.csv
+    day_id: period-24
+  time_step_base: 0
+  request_id_scope: day
+  ordering:
+    mode: explicit_csv
+    path: data/auctionnet_72/sample_request_order.csv
+  players:
+    '0':
+      player_type: '0'
+      budget: 2900.0
+    '1':
+      player_type: '0'
+      budget: 4350.0
+    '2':
+      player_type: '0'
+      budget: 3000.0
+    '3':
+      player_type: '0'
+      budget: 2400.0
+    '4':
+      player_type: '0'
+      budget: 4800.0
+    '5':
+      player_type: '0'
+      budget: 2000.0
+    '6':
+      player_type: '0'
+      budget: 2050.0
+    '7':
+      player_type: '0'
+      budget: 3500.0
+    '8':
+      player_type: '1'
+      budget: 4600.0
+    '9':
+      player_type: '1'
+      budget: 2000.0
+    '10':
+      player_type: '1'
+      budget: 2800.0
+    '11':
+      player_type: '1'
+      budget: 2350.0
+    '12':
+      player_type: '1'
+      budget: 2050.0
+    '13':
+      player_type: '1'
+      budget: 2900.0
+    '14':
+      player_type: '1'
+      budget: 4750.0
+    '15':
+      player_type: '1'
+      budget: 3450.0
+    '16':
+      player_type: '2'
+      budget: 2000.0
+    '17':
+      player_type: '2'
+      budget: 3500.0
+    '18':
+      player_type: '2'
+      budget: 2200.0
+    '19':
+      player_type: '2'
+      budget: 2700.0
+    '20':
+      player_type: '2'
+      budget: 3100.0
+    '21':
+      player_type: '2'
+      budget: 2100.0
+    '22':
+      player_type: '2'
+      budget: 4850.0
+    '23':
+      player_type: '2'
+      budget: 4100.0
+    '24':
+      player_type: '3'
+      budget: 2000.0
+    '25':
+      player_type: '3'
+      budget: 4800.0
+    '26':
+      player_type: '3'
+      budget: 3050.0
+    '27':
+      player_type: '3'
+      budget: 4250.0
+    '28':
+      player_type: '3'
+      budget: 2850.0
+    '29':
+      player_type: '3'
+      budget: 2250.0
+    '30':
+      player_type: '3'
+      budget: 2000.0
+    '31':
+      player_type: '3'
+      budget: 3900.0
+    '32':
+      player_type: '4'
+      budget: 2000.0
+    '33':
+      player_type: '4'
+      budget: 3250.0
+    '34':
+      player_type: '4'
+      budget: 4450.0
+    '35':
+      player_type: '4'
+      budget: 3550.0
+    '36':
+      player_type: '4'
+      budget: 2700.0
+    '37':
+      player_type: '4'
+      budget: 2100.0
+    '38':
+      player_type: '4'
+      budget: 4650.0
+    '39':
+      player_type: '4'
+      budget: 2000.0
+    '40':
+      player_type: '5'
+      budget: 3400.0
+    '41':
+      player_type: '5'
+      budget: 2650.0
+    '42':
+      player_type: '5'
+      budget: 2300.0
+    '43':
+      player_type: '5'
+      budget: 4100.0
+    '44':
+      player_type: '5'
+      budget: 4800.0
+    '45':
+      player_type: '5'
+      budget: 4450.0
+    '46':
+      player_type: '5'
+      budget: 2000.0
+    '47':
+      player_type: '5'
+      budget: 2050.0
+  budgets_by_day:
+    period-7:
+      '0': 2900.0
+      '1': 4350.0
+      '2': 3000.0
+      '3': 2400.0
+      '4': 4800.0
+      '5': 2000.0
+      '6': 2050.0
+      '7': 3500.0
+      '8': 4600.0
+      '9': 2000.0
+      '10': 2800.0
+      '11': 2350.0
+      '12': 2050.0
+      '13': 2900.0
+      '14': 4750.0
+      '15': 3450.0
+      '16': 2000.0
+      '17': 3500.0
+      '18': 2200.0
+      '19': 2700.0
+      '20': 3100.0
+      '21': 2100.0
+      '22': 4850.0
+      '23': 4100.0
+      '24': 2000.0
+      '25': 4800.0
+      '26': 3050.0
+      '27': 4250.0
+      '28': 2850.0
+      '29': 2250.0
+      '30': 2000.0
+      '31': 3900.0
+      '32': 2000.0
+      '33': 3250.0
+      '34': 4450.0
+      '35': 3550.0
+      '36': 2700.0
+      '37': 2100.0
+      '38': 4650.0
+      '39': 2000.0
+      '40': 3400.0
+      '41': 2650.0
+      '42': 2300.0
+      '43': 4100.0
+      '44': 4800.0
+      '45': 4450.0
+      '46': 2000.0
+      '47': 2050.0
+    period-21:
+      '0': 2900.0
+      '1': 4350.0
+      '2': 3000.0
+      '3': 2400.0
+      '4': 4800.0
+      '5': 2000.0
+      '6': 2050.0
+      '7': 3500.0
+      '8': 4600.0
+      '9': 2000.0
+      '10': 2800.0
+      '11': 2350.0
+      '12': 2050.0
+      '13': 2900.0
+      '14': 4750.0
+      '15': 3450.0
+      '16': 2000.0
+      '17': 3500.0
+      '18': 2200.0
+      '19': 2700.0
+      '20': 3100.0
+      '21': 2100.0
+      '22': 4850.0
+      '23': 4100.0
+      '24': 2000.0
+      '25': 4800.0
+      '26': 3050.0
+      '27': 4250.0
+      '28': 2850.0
+      '29': 2250.0
+      '30': 2000.0
+      '31': 3900.0
+      '32': 2000.0
+      '33': 3250.0
+      '34': 4450.0
+      '35': 3550.0
+      '36': 2700.0
+      '37': 2100.0
+      '38': 4650.0
+      '39': 2000.0
+      '40': 3400.0
+      '41': 2650.0
+      '42': 2300.0
+      '43': 4100.0
+      '44': 4800.0
+      '45': 4450.0
+      '46': 2000.0
+      '47': 2050.0
+    period-24:
+      '0': 2900.0
+      '1': 4350.0
+      '2': 3000.0
+      '3': 2400.0
+      '4': 4800.0
+      '5': 2000.0
+      '6': 2050.0
+      '7': 3500.0
+      '8': 4600.0
+      '9': 2000.0
+      '10': 2800.0
+      '11': 2350.0
+      '12': 2050.0
+      '13': 2900.0
+      '14': 4750.0
+      '15': 3450.0
+      '16': 2000.0
+      '17': 3500.0
+      '18': 2200.0
+      '19': 2700.0
+      '20': 3100.0
+      '21': 2100.0
+      '22': 4850.0
+      '23': 4100.0
+      '24': 2000.0
+      '25': 4800.0
+      '26': 3050.0
+      '27': 4250.0
+      '28': 2850.0
+      '29': 2250.0
+      '30': 2000.0
+      '31': 3900.0
+      '32': 2000.0
+      '33': 3250.0
+      '34': 4450.0
+      '35': 3550.0
+      '36': 2700.0
+      '37': 2100.0
+      '38': 4650.0
+      '39': 2000.0
+      '40': 3400.0
+      '41': 2650.0
+      '42': 2300.0
+      '43': 4100.0
+      '44': 4800.0
+      '45': 4450.0
+      '46': 2000.0
+      '47': 2050.0
+  split_by_day:
+    period-7: train
+    period-21: validation
+    period-24: local_holdout
+_dataset_derivation_metadata:
+  source_kind: auctionnet_native_simulation
+  value_semantics: unaltered source pValue (conversion probability), used as local
+    value score
+  sample_policy: first K requests per mapped slot, all advertisers; full-data mapping
+    retained
+  sample_requests_per_slot:
+    period-7: 4
+    period-21: 4
+    period-24: 4
+  budget_policy: original source budgets retained; this small sample may be budget-loose
+  role_policy: three highest raw-value winner counts in selected train sample only
+  source_period_metadata_sha256:
+    period-7: 34f7ff022a08702051c9412d4f6cea63d1e5eba202c1ae3b6b138406bb7e2d8b
+    period-21: 64c2408d530965b23ab9a3fa900f834b9d0c91d374e0a5b2f5fe4e4f0387da53
+    period-24: 954b1d3f8ceb0906704f47c43b6b66a033f15bbaf02967fdab3a28bd13e7f541
+  mapping_assumptions:
+    period-7: 'LOCAL timing assumption: requests are uniformly positioned inside each
+      original 1/48-day slot; map request midpoints into 72 slots. No original timestamps
+      or official 72-slot timing are claimed. Keep first-seen request order, never
+      sort by pvIndex; preserve source pValue and budgets. Historical bids, payments,
+      exposure/conversion outcomes and CPA constraints are not replayed.'
+    period-21: 'LOCAL timing assumption: requests are uniformly positioned inside
+      each original 1/48-day slot; map request midpoints into 72 slots. No original
+      timestamps or official 72-slot timing are claimed. Keep first-seen request order,
+      never sort by pvIndex; preserve source pValue and budgets. Historical bids,
+      payments, exposure/conversion outcomes and CPA constraints are not replayed.'
+    period-24: 'LOCAL timing assumption: requests are uniformly positioned inside
+      each original 1/48-day slot; map request midpoints into 72 slots. No original
+      timestamps or official 72-slot timing are claimed. Keep first-seen request order,
+      never sort by pvIndex; preserve source pValue and budgets. Historical bids,
+      payments, exposure/conversion outcomes and CPA constraints are not replayed.'
+pid:
+  kp: 1.5
+  ki: 0.1
+  kd: 0.15
+  initial_alpha: 1.0
+evaluation:
+  roles:
+  - '14'
+  - '21'
+  - '41'
+  teams:
+    A:
+      kind: pid
+    B:
+      kind: pid
+    C:
+      kind: pid
+  diagnostic_undefined: false
+  isolation: process

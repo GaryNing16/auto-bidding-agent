@@ -1,0 +1,32 @@
+# All numbers here are LOCAL example values, not official parameters.
+rules:
+  total_slots: 72
+  money_decimals: 6
+  zero_balance_can_bid: false
+  tie_seed: 20261018
+  budget_policy: exclude_unaffordable_reauction
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 4
+agent_seed: 1234
+data_dir: data/synthetic_demo
+output_dir: outputs/demo
+split: train
+synthetic:
+  seed: 7301
+  n: 4
+  days: ['2026-10-01', '2026-10-02', '2026-10-03']
+  base_opportunities: 16
+  budget_min: 120.0
+  budget_max: 240.0
+  empty_slots: [0, 17]
+  burst_slots: [36, 60]
+pid:
+  kp: 1.5
+  ki: 0.1
+  kd: 0.15
+  initial_alpha: 1.0
+run:
+  assignments: {advertiser_1: constant}
+  teams:
+    constant: {kind: constant, alpha: 1.2}

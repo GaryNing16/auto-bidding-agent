@@ -1,0 +1,26 @@
+rules:
+  total_slots: 72
+  money_decimals: 6
+  zero_balance_can_bid: false
+  tie_seed: 20261018
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 4
+agent_seed: 1234
+data_dir: data/synthetic_demo
+output_dir: outputs/single
+split: local_holdout
+pid:
+  kp: 1.5
+  ki: 0.1
+  kd: 0.15
+  initial_alpha: 1.0
+evaluation:
+  reference_strategy: local_pid
+  roles: [advertiser_1, advertiser_2, advertiser_3]
+  teams:
+    A: {kind: pid, kp: 1.5, ki: 0.1, kd: 0.15, initial_alpha: 1.0}
+    B: {kind: constant, alpha: 1.0}
+    C: {kind: constant, alpha: 1.4}
+  diagnostic_undefined: false
+  isolation: process

@@ -1,0 +1,24 @@
+# Synthetic small smoke test, independent from manually computed fixtures/tiny.
+rules:
+  total_slots: 3
+  money_decimals: 6
+  zero_balance_can_bid: false
+  tie_seed: 20261018
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 3
+agent_seed: 1234
+data_dir: data/synthetic_tiny
+output_dir: outputs/tiny
+split: train
+synthetic:
+  seed: 42
+  n: 3
+  days: ['2026-10-01', '2026-10-02', '2026-10-03']
+  base_opportunities: 3
+  budget_min: 10.0
+  budget_max: 30.0
+  empty_slots: [0]
+  burst_slots: [2]
+pid:
+  initial_alpha: 1.0

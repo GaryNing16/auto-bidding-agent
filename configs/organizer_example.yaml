@@ -1,0 +1,49 @@
+# Hand-authored schema fixture ONLY, not organizer-provided data/parameters.
+# All paths resolve from the repository root (current working directory).
+rules:
+  total_slots: 72
+  money_decimals: 6
+  zero_balance_can_bid: false
+  tie_seed: 20261018
+  rules_version: harmony-A-B-local-v2
+  assumption_profile: local-unified-v2
+expected_n: 3
+agent_seed: 1234
+data_dir: data/organizer_schema_example
+output_dir: outputs/organizer_schema_example
+split: train
+organizer_import:
+  source_kind: schema_fixture
+  # No date column exists in the six fields: declare each file's day explicitly.
+  sources:
+    - {path: fixtures/organizer/train_part1.csv, day_id: '2026-10-20'}
+    - {path: fixtures/organizer/train_part2.csv, day_id: '2026-10-20'}
+    - {path: fixtures/organizer/validation.csv, day_id: '2026-10-21'}
+    - {path: fixtures/organizer/local_holdout.csv, day_id: '2026-10-22'}
+  # Explicit local choices; inspect real files/organizer guidance before import.
+  time_step_base: 1
+  request_id_scope: day
+  ordering:
+    mode: file_first_seen
+    # Alternative: mode: explicit_csv, path: fixtures/organizer/request_order.csv
+  players:
+    '001': {player_type: '7', budget: 100.0}
+    '002': {player_type: '2', budget: 100.0}
+    '010': {player_type: 'A', budget: 100.0}
+  split_by_day:
+    '2026-10-20': train
+    '2026-10-21': validation
+    '2026-10-22': local_holdout
+pid:
+  kp: 1.5
+  ki: 0.1
+  kd: 0.15
+  initial_alpha: 1.0
+evaluation:
+  roles: ['001', '002', '010']
+  teams:
+    A: {kind: pid}
+    B: {kind: constant, alpha: 1.0}
+    C: {kind: constant, alpha: 1.4}
+  diagnostic_undefined: false
+  isolation: process
